@@ -38,7 +38,7 @@ function count_slice_time() {
 	return sum / len;
 }
 const slice_time = count_slice_time();
-console.log(slice_time);
+console.log(`slice_time: ${slice_time}`);
 
 function parse_input(dir_name, filename) {
 	const lines = fs.readFileSync(dir_name + "/" + filename).toString().split("\n");
